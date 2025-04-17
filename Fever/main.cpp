@@ -7,8 +7,18 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main() {
+  // Write code here
+  int temp;
+
+  std::cout << "Please enter your temperature in Fahrenheit: ";
+  std::cin >> temp;
+  
+  if (temp >= 100){
+    std::cout << "You have a fever. 🤒";
+  }
+
+  else {
+    std::cout << "You do not have a fever. 🕺";
+  }
 }
